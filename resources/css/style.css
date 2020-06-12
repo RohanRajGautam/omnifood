@@ -1,0 +1,415 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {outline: none;}
+
+html{
+    background-color: aliceblue;
+    color: #555;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    ;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* -------------------------------------------- */
+/* ----------HEADER-----------------------------*/
+/* -------------------------------------------- */
+
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1,
+h2,
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+    margin: 0;
+    color: #ffffff;
+    font-size: 250%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+
+/* -------------------------------------------- */
+/* ----------BUTTONS-----------------------------*/
+/* -------------------------------------------- */
+
+.btn:link, 
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 150px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    margin-right: 15px;
+}
+
+.btn-pri:link,
+.btn-pri:visited,
+input[type=submit]{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+.btn-sec:link,
+.btn-sec:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active,
+/* input[type=submit]:hover, */
+input[type=submit]:active{
+    background-color: #27ae60;
+    color:white;
+    border: 1px solid #27ae60; 
+}
+
+/* ----------NAV BAR-----------------------------*/
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+.main-nav{
+    display: flex;
+    float: right;
+    list-style: none;
+}
+
+.main-nav li{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.main-nav a:link,
+.main-nav a:visited{
+    padding: 8px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+
+.main-nav a:hover,
+.main-nav a:active{
+    border-bottom: 2px solid #e67e22;
+    transition: border-bottom 0.2s;
+}
+
+/*-------SECOND PAGE------*/
+
+
+section{
+    padding: 60px 0;
+}
+
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+h2{
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 30px;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after{
+   display: block;
+   height: 3px;
+   width: 200px;
+   background-color: #e67e22; 
+   content: " ";
+   margin: 0 auto;
+   margin-top: 30px;
+}
+
+h3{
+    font-size: 120%;
+    margin-bottom: 15px;
+
+}
+
+/*-------PARAGRAPH------*/
+
+.long-copy{
+    line-height: 130%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 30px;
+}
+
+.box{
+    padding: .5%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/*---------ICON----------*/
+
+ion-icon{
+    font-size: 250%;
+    display: block;
+    margin-bottom: 20px;
+    color: #e67e22;
+    padding-left: 30px;
+}
+
+/* -------------------------------------------- */
+/* ----------3rd page(img)-----------------------------*/
+/* -------------------------------------------- */
+
+.meals-showcase{
+    width: 100%;
+    list-style: none;
+}
+
+.meals-showcase li{
+    width: 25%;
+    display: block;
+    float: left;
+    height: 50%;
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    padding-left: 5px; 
+    transform: scale(1.2);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.section-meals{
+    padding: 0;
+}
+
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1.12);
+}
+
+
+/* -------------------------------------------- */
+/* ----------4rd page(how it works)-------------*/
+/* -------------------------------------------- */
+
+.step-box:first-child{
+    padding-right: 10%;
+    text-align: right;
+    margin-top: 30px;
+}
+
+.step-box:last-child{
+    padding-left: 3%;
+    margin-top: 80px;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.work-step{
+    margin-bottom: 25px;
+}
+
+.work-step:last-of-type{
+    margin-bottom: 60px;
+}
+
+.work-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    padding: 3px;
+    height: 40px;
+    width: 40px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+  
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.section-steps{
+    background-color: #f4f4f4;
+}
+
+
+/* -------------------------------------------- */
+/* ----------Testimonials----------------------*/
+/* -------------------------------------------- */
+
+.section-testomonial{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote{
+    font-style: italic;
+    padding: 2%;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    border-color: blue;
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+
+
+/* -------------------------------------------- */
+/* ----------Forms-----------------------------*/
+/* -------------------------------------------- */
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: #ccc;
+}
+
+input[type=submit]{
+    margin-top: 10px;
+}
+
+/* -------------------------------------------- */
+/* ----------footer-----------------------------*/
+/* -------------------------------------------- */
+
+footer{
+    background-color: #333;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-link{
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-link li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-link li{
+    font-size: 50%;
+}
+
+.footer-nav li a{
+    text-decoration: none;
+    color: #e67e22;
+    font-size: small;
+}
+
+.copy{
+    font-size: small;
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
