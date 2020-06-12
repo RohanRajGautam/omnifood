@@ -1,0 +1,23 @@
+{
+  "name": "omnifood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RohanRajGautam/omnifood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RohanRajGautam/omnifood/issues"
+  },
+  "homepage": "https://rohanrajgautam.github.io/omnifood",
+  "dependencies": {
+    "gh-pages": "^3.0.0"
+  }
+}
